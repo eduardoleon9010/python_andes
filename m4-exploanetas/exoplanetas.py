@@ -14,7 +14,6 @@ def cargar_datos(nombre_archivo:str)->pd.DataFrame:
     """
     pass
 
-
 def histograma_descubrimiento(datos:pd.DataFrame)->None:
     """ Calcula y despliega un histograma con 30 grupos (bins) en el que debe
         aparecer la cantidad de planetas descubiertos por anho.
@@ -59,7 +58,6 @@ def cantidad_y_tipo_deteccion(datos:pd.DataFrame)->None:
         datos (DataFrame): el DataFrame con la informacion de los exoplanetas
     """
     pass
-
 
 def masa_promedio_y_tipo_deteccion(datos:pd.DataFrame)->None:
     """ Calcula y despliega un diagrama de lineas donde aparece una linea por
