@@ -1,0 +1,76 @@
+Information, Warnings and Errors reported for this mirror:
+
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+
+	such as username/password authentication for websites mirrored in this project
+
+	do not share these files/folders if you want these information to remain private
+
+
+
+22:24:59	Warning: 	Note: due to https://bestfriends.org remote robots.txt rules, links beginning with these path will be forbidden: /core/, /profiles/, /README.txt, /web.config, /admin/, /comment/reply/, /filter/tips, /node/add/, /search/, /user/register, /user/password, /user/login, /user/logout, /media/oembed, /*/media/oembed, /index.php/admin/, /index.php/comment/reply/, /index.php/filter/tips, /index.php/node/add/, /index.php/search/, /index.php/user/password, /index.php/user/register, /index.php/user/login, /index.php/user/logout, /index.php/media/oembed, /index.php/*/media/oembed (see in the options to disable this)
+
+22:25:53	Error: 	"Not Found" (404) at link https://bestfriends.org/e,r.href (from https://bestfriends.org/es)
+
+Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://bestfriends.org/sites/default/files/google_tag/bfas_google_tag_manager_container/google_tag.script.js?rqi1ix)
+
+22:46:57	Error: 	"Not Found" (404) at link https://bestfriends.org/themes/calico/fonts/handlee-v9-latin-regular.woff2 (from https://bestfriends.org/sites/default/files/css/css_Zn7pn6kZHfNuooa_5jzTYMfb_2BHx3YthKg5ZF-gM3c.css)
+
+22:46:57	Error: 	"Not Found" (404) at link https://bestfriends.org/themes/calico/fonts/handlee-v9-latin-regular.woff (from https://bestfriends.org/sites/default/files/css/css_Zn7pn6kZHfNuooa_5jzTYMfb_2BHx3YthKg5ZF-gM3c.css)
+
+22:46:57	Error: 	"Not Found" (404) at link https://bestfriends.org/es/e,r.href (from https://bestfriends.org/es/quienes-somos)
+
+23:04:21	Error: 	"Not Found" (404) at link https://bestfriends.org/es/salva-mascotas/e,r.href (from https://bestfriends.org/es/salva-mascotas/servir-como-voluntario)
+
+23:04:26	Error: 	"Not Found" (404) at link https://bestfriends.org/es/historias/recursos/e,r.href (from https://bestfriends.org/es/historias/recursos/esterilizacion)
+
+23:08:02	Error: 	"Not Found" (404) at link https://bestfriends.org/es/cuidado-de-mascotas/e,r.href (from https://bestfriends.org/es/cuidado-de-mascotas/informa)
+
+23:08:02	Error: 	"Not Found" (404) at link https://bestfriends.org/es/historias/feature/e,r.href (from https://bestfriends.org/es/historias/feature/haz-encontrado-gatitos)
+
+23:08:11	Error: 	"Not Found" (404) at link https://bestfriends.org/es/historias/articulos/e,r.href (from https://bestfriends.org/es/historias/articulos/lo-que-debes-saber-sobre-los-gatos-comunitarios)
+
+23:09:05	Error: 	"Not Found" (404) at link https://bestfriends.org/es/medios-de-comunicacion/e,r.href (from https://bestfriends.org/es/medios-de-comunicacion/comunicados-de-prensa)
+
+23:16:45	Error: 	Exit requested by shell or user
+
+23:16:46	Warning: 	File not added due to mirror cancel: https://bestfriends.org/events/best-friends-national-conference/speakers/dawn-binion-stewart
+
+23:16:58	Error: 	"Not Found" (404) at link https://bestfriends.org/nkla/involved (from https://bestfriends.org/nkla)
+
+23:16:58	Error: 	"Not Found" (404) at link https://bestfriends.org/nkla/about (from https://bestfriends.org/nkla)
+
+23:16:58	Error: 	"Not Found" (404) at link https://bestfriends.org/nkla/donate (from https://bestfriends.org/nkla)
+
+23:16:58	Error: 	"Not Found" (404) at link https://bestfriends.org/nkla/adopt (from https://bestfriends.org/nkla)
+
+23:16:58	Error: 	"Not Found" (404) at link https://bestfriends.org/nkla/contact (from https://bestfriends.org/nkla)
+
+23:16:58	Error: 	"Not Found" (404) at link https://bestfriends.org/sanctuary/explore-sanctuary/dogtown/e,r.href (from https://bestfriends.org/sanctuary/explore-sanctuary/dogtown/series)
+
+23:16:58	Error: 	"Not Found" (404) at link https://bestfriends.org/who-we-are/e,r.href (from https://bestfriends.org/who-we-are/awards)
+
+23:16:59	Error: 	"Not Found" (404) at link https://bestfriends.org/stories/julie-castle-blog/e,r.href (from https://bestfriends.org/stories/julie-castle-blog/best-friends-recognized-fast-companys-2022-brands-matter)
+
+23:16:59	Error: 	"Not Found" (404) at link https://bestfriends.org/images/google_custom_search_watermark.gif (from https://bestfriends.org/sites/default/files/js/js_skwI3UYrhDmNy47RQElF2ssI-B0YwPy9d09a9xpebPk.js)
+
+23:17:07	Error: 	"Not Found" (404) at link https://bestfriends.org/donate/become-member/e,r.href (from https://bestfriends.org/donate/become-member/guardian-angel?utm_campaign=sustainerrecruitmentfeb23)
+
+23:17:07	Error: 	"Not Found" (404) at link https://bestfriends.org/stories/features/e,r.href (from https://bestfriends.org/stories/features/chance-meetings-lead-best-bunny-buddies)
+
+23:17:10	Error: 	Exit requested by shell or user
+
+23:17:10	Error: 	"" (-1) at link https://bestfriends.org/stories/animals/dog (from https://bestfriends.org/stories/features/dog-found-barely-alive-gets-help-and-home)
+
+23:17:10	Error: 	Exit requested by shell or user
+
+
+
+HTTrack Website Copier/3.49-2 mirror complete in 52 minutes 12 seconds : 2298 links scanned, 2224 files written (662410342 bytes overall) [721085869 bytes received at 230231 bytes/sec], 141928755 bytes transferred using HTTP compression in 1048 files, ratio 28%, 30.8 requests per connection
+
+(26 errors, 2 warnings, 0 messages)
+
+* * MIRROR ABORTED! * *
+The current temporary cache is required for any update operation and only contains data downloaded during the present aborted session.
+The former cache might contain more complete information; if you do not want to lose that information, you have to restore it and delete the current cache.
+This can easily be done here by erasing the hts-cache/new.* files]
