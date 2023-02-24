@@ -58,16 +58,16 @@ header{
     width: 100%;
     height: 400px;
     position: relative;
-    background-image: url("img/g5.jpg");
+    background-image: url(https://images.unsplash.com/photo-1559235038-1b0fadf76f78?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdhdG9zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
     background-size: 200%;
-    animation: movimiento 20s infinite linear alternate;  
+    animation: movimiento 15s infinite linear alternate;  
 }
 
 @keyframes movimiento{
     from{
-        background-position: bottom left;
+        background-position: bottom right;
     }to{
-        background-position: top right;
+        background-position: top left;
     }
 }
 
