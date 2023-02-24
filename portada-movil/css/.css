@@ -150,7 +150,7 @@ article h1{
 }
 
 article hr{
-    max-width: 500px;
+    max-width: 650px;
     height: 4px;
     border-style: none;
     background: -webkit-linear-gradient(left, black, #0672d0);
