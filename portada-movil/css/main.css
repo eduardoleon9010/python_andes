@@ -60,7 +60,7 @@ header{
     width: 100%;
     height: 400px;
     position: relative;
-    background-image: url(../image/portada.jpg);
+    background-image: url(img/g3.png);
     background-size: 200%;
     animation: movimiento 20s infinite linear alternate;  
 }
