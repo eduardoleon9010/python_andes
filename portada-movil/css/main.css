@@ -40,7 +40,7 @@ header{
     position: absolute;
     right: 10px;
     top: 14px;
-    color: white;
+    color: rgb(16, 1, 1);
     font-size: 28px;
     border: 1px solid rgba(255, 255, 255, 0.4);
     cursor: pointer;
@@ -54,13 +54,11 @@ header{
 
 /*Portada*/
 
-
-
 .container-portada{
     width: 100%;
     height: 400px;
     position: relative;
-    background-image: url("img/g3.png");
+    background-image: url("img/g5.jpg");
     background-size: 200%;
     animation: movimiento 20s infinite linear alternate;  
 }
