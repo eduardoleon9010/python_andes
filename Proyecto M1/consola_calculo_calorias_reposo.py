@@ -1,26 +1,25 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Jan  5 22:34:06 2022
+Created on Sat Sep  9 20:10:30 2023
 
-@author: abelator
-
-Con este archivo interactuamos con el usuario para obtener los datos
-necesarios para caluclar las calorias necesarias en reposo y devolverselo al usuario
+@author: Ing. Leon
 """
 
 import calculadora_indices as calc
-"""
-Con la linea anterior importamos el módulo que realiza todos
-los cálculos de los diferentes índices
-"""
 
-def calorias_reposo() -> None:
-    
-    peso = float(input("Ingrese el peso de la persona (en kilogramos): "))
-    altura = float(input("Ingresa la altura de la persona (en centimetros): "))
-    edad = int(input("Ingresa la edad de la persona (en años): "))
-    valor_genero = int(input("Ingresa el valor 5 en caso de ser masculino o -161 en caso de ser femenino: "))
-    cal_rep = calc.calcular_calorias_reposo(peso, altura, edad, valor_genero)
-    print ("\nLa cantidad de calorias que quema la persona en reposo son: " + str(round(cal_rep, 2)) + " cal")
-    
-calorias_reposo()
+print("Calculadora de Calorías en Reposo (Tasa Metabólica Basal - TMB)")
+genero = input("Ingrese su género (H para hombre, M para mujer): ").upper()
+peso = float(input("Ingrese su peso en kilogramos: "))
+altura = float(input("Ingrese su altura en centímetros: "))
+edad = int(input("Ingrese su edad en años: "))
+
+if genero == 'H':
+    valor_genero = 5
+elif genero == 'M':
+    valor_genero = -161
+else:
+    print("Género no válido")
+    exit()
+
+tmb = calc.calcular_calorias_en_reposo(peso, altura, edad, valor_genero)
+print(f"Su TMB es: {tmb:.2f} calorías por día")
