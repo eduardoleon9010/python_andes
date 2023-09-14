@@ -1,135 +1,89 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Dec 29 23:59:58 2021
+Created on Sat Sep  9 18:04:15 2023
 
-@author: abelator
-
-Aquí realizaremos los cálculos para obtener los índices 
-según los paremetros introducidos por el usuario en otro módulo
-que invocará a este
+@author: Ing. Leon
 """
 
-def calcular_IMC(peso:float, altura:float)->float:
-    """
-    Calcula el índice de masa corporal de una persona a partir de la ecuación.
-    
-    Parameters
-    ----------
-    peso : float
-        de la persona en kg.
-    altura : float
-        de la persona en metros.
+"""Proyecto en Python para calcular índices corporales
+ como el índice de masa corporal (IMC) y la tasa 
+ metabólica basal (TMB) con una interfaz de usuario 
+ basada en consola. Aquí tienes una guía paso a paso 
+ para crear este proyecto:"""
 
-    Returns
-    -------
-    float
-        Índice de masa corporal.
-    """
-    IMC = peso/pow(altura, 2)
+# calculadora_indices.py
+
+def calcular_IMC(peso: float, altura: float) -> float:
+    '''
+    Calcula el índice de masa corporal (IMC) de una persona a partir del peso y la altura.
+
+    :param peso: Peso de la persona en kilogramos.
+    :param altura: Altura de la persona en metros.
+    :return: Índice de masa corporal (IMC) de la persona.
+    '''
+    IMC = peso / (altura ** 2)
     return IMC
 
-def calcular_porcentaje_grasa(peso:float, altura:float, edad:int, valor_genero:float)->float:
-    """
-    Calcula el porcentaje de grasa de una persona a partir de la ecuación.
-   
-    Parameters
-    ----------
-    peso : float
-        en kg.
-    altura : float
-        en metros.
-    edad : int
-        en años.
-    valor_genero : float
-        masculino 10.8 y femenino 0.
+def calcular_porcentaje_grasa(peso: float, altura: float, edad: int, valor_genero: float) -> float:
+    '''
+    Calcula el porcentaje de grasa de una persona a partir del peso, la altura, la edad y el valor de género.
 
-    Returns
-    -------
-    float
-        Porcentaje de grasa del cuerpo.
-    """
-    PGC = 1.2 * peso/pow(altura, 2) + 0.23 * edad - 5.4 - valor_genero
-    return PGC
+    :param peso: Peso de la persona en kilogramos.
+    :param altura: Altura de la persona en metros.
+    :param edad: Edad de la persona en años.
+    :param valor_genero: Valor que varía según el género: 10.8 para masculino, 0 para femenino.
+    :return: Porcentaje de grasa de la persona.
+    '''
+    GC = 1.2 * calcular_IMC(peso, altura) + 0.23 * edad - 5.4 - valor_genero
+    return GC
 
-def calcular_calorias_reposo(peso:float, altura:float, edad:int,
-                             valor_genero:int)->float:
-    """
-    Calorias quemadas en reposo = tasa metabólica basal.
-    
-    Parameters
-    ----------
-    peso : float
-        en kg.
-    altura : float
-        en centimetros.
-    edad : int
-        en años.
-    valor_genero : int
-        masculino 5 y femenino -161.
+def calcular_calorias_en_reposo(peso: float, altura: float, edad: int, valor_genero: int) -> float:
+    '''
+    Calcula la cantidad de calorías que una persona quema estando en reposo (tasa metabólica basal) a partir del peso, la altura, la edad y el valor de género.
 
-    Returns
-    -------
-    float
-        tasa metabólica basal.
-    """
-    TMB = 10*peso + 6.25*altura - 5*edad + valor_genero
+    :param peso: Peso de la persona en kilogramos.
+    :param altura: Altura de la persona en centímetros.
+    :param edad: Edad de la persona en años.
+    :param valor_genero: Valor que varía según el género: 5 para masculino, -161 para femenino.
+    :return: Tasa metabólica basal (TMB) de la persona en calorías.
+    '''
+    TMB = (10 * peso) + (6.25 * altura) - (5 * edad) + valor_genero
     return TMB
 
-def calcular_calorias_en_actividad(peso:float, altura:float, edad:int,
-                             valor_genero:int, valor_actividad:float)->float:
-    """
-    Calorias quemadas en actividad = tmb según actividad.
+def calcular_calorias_en_actividad(peso: float, altura: float, edad: int, valor_genero: int, valor_actividad: float) -> float:
+    '''
+    Calcula la cantidad de calorías que una persona quema al realizar algún tipo de actividad física a partir del peso, la altura, la edad, el valor de género y el valor de actividad.
+
+    :param peso: Peso de la persona en kilogramos.
+    :param altura: Altura de la persona en centímetros.
+    :param edad: Edad de la persona en años.
+    :param valor_genero: Valor que varía según el género: 5 para masculino, -161 para femenino.
+    :param valor_actividad: Valor que depende de la actividad física semanal (ejemplo: 1.2 para poco o ningún ejercicio).
+    :return: Cantidad de calorías quemadas al realizar la actividad física.
+    '''
+    TMB = calcular_calorias_en_reposo(peso, altura, edad, valor_genero)
+    TMB_actividad_fisica = TMB * valor_actividad
+    return TMB_actividad_fisica
+
+def consumo_calorias_recomendado_para_adelgazar(peso: float, altura: float, edad: int, valor_genero: int) -> str:
+    '''
+    Calcula el rango de calorías recomendado para adelgazar a partir del peso, la altura, la edad y el valor de género.
+
+    :param peso: Peso de la persona en kilogramos.
+    :param altura: Altura de la persona en centímetros.
+    :param edad: Edad de la persona en años.
+    :param valor_genero: Valor que varía según el género: 5 para masculino, -161 para femenino.
+    :return: Rango de calorías recomendado para adelgazar en formato de cadena.
+    '''
+    CCDA = (calcular_calorias_en_reposo(peso, altura, edad, valor_genero) * (20 / 100))
+    CCDA_2 = (calcular_calorias_en_reposo(peso, altura, edad, valor_genero) * (15 / 100))
+    CDA = calcular_calorias_en_reposo(peso, altura, edad, valor_genero) - CCDA
+    CDA_2 = calcular_calorias_en_reposo(peso, altura, edad, valor_genero) - CCDA_2
     
-    Parameters
-    ----------
-    peso : float
-        en kg.
-    altura : float
-        en centimetros.
-    edad : int
-        en años.
-    valor_genero : int
-        masculino 5 y femenino -161.
-    valor_actividad: float
-        según su intensidad semanal 1.2, 1.375, 1.55, 1.72, 1.9
+    resultado = f"Para adelgazar es recomendado que consumas entre: {CDA:.2f} y {CDA_2:.2f} calorías al día."
+    return resultado
 
-    Returns
-    -------
-    float
-        tasa metabólica basal en actividad.
-    """
-    TMBA =  (10*peso + 6.25*altura - 5*edad + valor_genero) * valor_actividad
-    return TMBA
-
-def consumo_calorias_recomendado_para_adelgazar(peso:float, altura:float, edad:int,
-                             valor_genero:int)->float:
-    """
-    Rango calorias diarias recomendadas para adelgazar.
-    
-    Parameters
-    ----------
-    peso : float
-        en kg.
-    altura : float
-        en centimetros.
-    edad : int
-        en años.
-    valor_genero : int
-        masculino 5 y femenino -161.
-
-    Returns
-    -------
-    float
-        dos valores, mínimo y máximo dentro de una cadena.
-    """
-    TMB = 10*peso + 6.25*altura - 5*edad + valor_genero
-    CCR_minimo = round(TMB * 0.8, 2)
-    CCR_maximo = round(TMB * 0.85 , 2)
-    return (str(CCR_minimo ) + " y " + str(CCR_maximo))
-    #return("Para adelgazar es recomendado que consumas entre: " + str(CCR_minimo) + " y " + str(CCR_maximo))
-
-#print(calcular_IMC(71, 1.78)) #solo para probar buen funcionamiento
-#print(calcular_porcentaje_grasa(71, 1.78, 42, 10.8))
-#print(calcular_calorias_reposo(71, 1.78, 42, 5))
-#print(calcular_calorias_en_actividad(71, 1.78, 42, 5,1.55))
-#print(consumo_calorias_recomendado_para_adelgazar(71, 1.78, 42, 5))
+# Ejemplo de uso:
+# Si deseas calcular el rango de calorías recomendado para adelgazar, puedes llamar a esta función de la siguiente manera:
+# resultado = consumo_calorias_recomendado_para_adelgazar(70, 175, 30, 5)  # Ejemplo con datos ficticios
+# print(resultado)
