@@ -1,25 +1,16 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Jan  2 21:46:38 2022
+Created on Sat Sep  9 20:10:01 2023
 
-@author: abelator
-
-Con este archivo interactuamos con el usuario para obtener los datos
-necesarios para caluclar el IMC y devolverselo al usuario
+@author: Ing. Leon
 """
 
 import calculadora_indices as calc
-"""
-Con la linea anterior importamos el módulo que realiza todos
-los cálculos de los diferentes índices
-"""
 
-def imc() -> None:
-    
-    peso = float(input("Ingrese el peso de la persona (en kilogramos): "))
-    altura = float(input("Ingresa la altura de la persona (en metros): "))
-    #edad = input("Ingrese la edad de la persona (en años): ")
-    IMC = calc.calcular_IMC(peso, altura)
-    print ("\nEl índice de masa corporal de la persona es: " + str(round(IMC, 2)))
-    
-imc()
+print("Calculadora de Índice de Masa Corporal (IMC)")
+peso = float(input("Ingrese su peso en kilogramos: "))
+altura = float(input("Ingrese su altura en metros: "))
+
+imc = calc.calcular_IMC(peso, altura)
+print(f"Su Índice de Masa Corporal (IMC) es: {imc:.2f}")
+
