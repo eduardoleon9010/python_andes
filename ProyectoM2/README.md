@@ -126,8 +126,8 @@ Una vez que tus cambios sean aprobados, se integrarán en el proyecto principal 
 contribución quedará registrada en la historia del proyecto.
 
 Autor
-Este proyecto fue desarrollado por [Ing. Eduardo Leon]. Puedes ponerte en contacto 
-conmigo en [contactonexatech@gmail.com] para preguntas o comentarios relacionados 
+Este proyecto fue desarrollado por Ing. Eduardo Leon. Puedes ponerte en contacto 
+conmigo en contactonexatech@gmail.com para preguntas o comentarios relacionados 
 con la aplicación.
 
 Agradecimientos
