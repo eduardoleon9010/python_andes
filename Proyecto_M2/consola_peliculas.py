@@ -1,14 +1,37 @@
-# -*- coding: utf-8 -*-
 """
-Created on Sun Feb  4 13:34:13 2024
+Nivel 2: Proyecto agenda de peliculas.
+Módulo de interaccion por teclado.
 
-@author: USUARIO
+
+Temas:
+* Variables.
+* Tipos de datos.
+* Expresiones aritmeticas.
+* Instrucciones basicas y consola.
+* Dividir y conquistar: funciones y paso de parametros.
+* Especificacion y documentacion.
+* Instrucciones condicionales.
+* Diccionarios.
+@author: Cupi2
+
 """
 
 import modulos_peliculas as mod
 
 def mostrar_informacion_pelicula(pelicula: dict) -> None:
-    """Imprime los detalles de la película."""
+    """Imprime los detalles de la pelicula
+    Parametros:
+        pelicula(dict): La pelicula de la cual se van a mostrar los detalles
+        El diccionario que representa una pelicula contiene las siguientes parejas de
+        llave-valor:
+            - nombre (str): Nombre de la pelicula agendada.
+            - genero (str): Generos de la pelicula separados por comas.
+            - duracion (int): Duracion en minutos de la pelicula
+            - anio (int): Anio de estreno de la pelicula
+            - clasificacion (str): Clasificacion de restriccion por edad
+            - hora (int): Hora de inicio de la pelicula
+            - dia (str): Indica que dia de la semana se planea ver la pelicula
+    """   
     nombre = pelicula["nombre"]
     genero = pelicula["genero"]
     duracion = pelicula["duracion"]
@@ -17,37 +40,86 @@ def mostrar_informacion_pelicula(pelicula: dict) -> None:
     hora = pelicula["hora"]
     dia = pelicula["dia"]
     
-    print(f"Nombre: {nombre} - Año: {anio} - Duración: {duracion} mins")
-    print(f"Genero: {genero} - Clasificación: {clasificacion}")
+    print("Nombre: " + nombre + " - Anio: " + str(anio) + " - Duracion: " + str(duracion) + "  mins" )
+    print("Genero: " + genero + " - Clasificacion: " + clasificacion)
     
-    hora_formato = str(hora // 100).zfill(2)
-    min_formato = str(hora % 100).zfill(2)
+    if (hora//100 < 10):
+        hora_formato = "0"+ str(hora//100)
+    else:
+        hora_formato = str(hora//100)
+    
+    if (hora%100 < 10):
+        min_formato = "0"+ str(hora%100)
+    else:
+        min_formato = str(hora%100)
 
-    print(f"Día: {dia} Hora: {hora_formato}:{min_formato}")
+    print("Dia: " + dia + " Hora: " + hora_formato + ":" + min_formato)
 
 def ejecutar_encontrar_pelicula_mas_larga(*peliculas: dict) -> None:
-    """Ejecuta la opción de encontrar la película más larga."""
+    """
+    Ejecuta la opción de encontrar la película más larga.
+
+    Parameters:
+    *peliculas (dict): Argumentos variables que contienen información sobre las películas.
+
+    Returns:
+    None: Esta función imprime la información de la película más larga en la consola.
+    """
+    # Llama a la función del módulo correspondiente para encontrar la película más larga
     pelicula_mas_larga = mod.encontrar_pelicula_mas_larga(*peliculas)
+
+    # Imprime la información de la película más larga
     print(f"La película más larga es {pelicula_mas_larga['nombre']} con una duración de {pelicula_mas_larga['duracion']} minutos")
 
 def ejecutar_consultar_duracion_promedio_peliculas(*peliculas: dict) -> None:
-    """Ejecuta la opción de consultar la duración promedio de las películas."""
+    """Ejecuta la opción de consultar la duración promedio de las películas.
+
+    Parameters:
+    *peliculas (dict): Argumentos variables que representan diccionarios de películas.
+
+    Returns:
+    None. Imprime la duración promedio de las películas en la consola.
+    """
     duracion_promedio = mod.duracion_promedio_peliculas(*peliculas)
     print(f"Duración promedio de películas: {duracion_promedio}")
 
+
 def ejecutar_encontrar_estrenos(*peliculas: dict) -> None:
-    """Ejecuta la opción de buscar películas de estreno."""
+    """Ejecuta la opción de buscar películas de estreno.
+
+    Parameters:
+    *peliculas (dict): Argumentos variables que representan diccionarios de películas.
+
+    Returns:
+    None. Imprime las películas de estreno encontradas en la consola.
+    """
     anio_referencia = int(input("¿Cuál año desea que sea la referencia?: "))
     estrenos = mod.encontrar_estrenos(anio_referencia, *peliculas)
     print(f"Películas de estreno encontradas: {estrenos}")
 
+
 def ejecutar_cuantas_peliculas_18_mas(*peliculas: dict) -> None:
-    """Ejecuta la opción de consultar cuántas películas tienen clasificación '18+'."""
+    """Ejecuta la opción de consultar cuántas películas tienen clasificación '18+'.
+
+    Parameters:
+    *peliculas (dict): Argumentos variables que representan diccionarios de películas.
+
+    Returns:
+    None. Imprime la cantidad de películas con clasificación '18+' en la consola.
+    """
     cantidad_18_mas = mod.cuantas_peliculas_18_mas(*peliculas)
     print(f"Existen {cantidad_18_mas} películas con clasificación '18+'.")
 
+
 def ejecutar_reagendar_pelicula(*peliculas: dict) -> None:
-    """Ejecuta la opción de reagendar una película."""
+    """Ejecuta la opción de reagendar una película.
+
+    Parameters:
+    *peliculas (dict): Argumentos variables que representan diccionarios de películas.
+
+    Returns:
+    None. Imprime el resultado del intento de reagendar la película en la consola.
+    """
     print("Reagendar una película de la agenda")
 
     nombre_pelicula = input("Ingrese el nombre de la película que desea reagendar: ")
@@ -65,8 +137,16 @@ def ejecutar_reagendar_pelicula(*peliculas: dict) -> None:
         else:
             print("No se puede reagendar la película debido a conflictos.")
 
+
 def ejecutar_decidir_invitar(*peliculas: dict) -> None:
-    """Ejecuta la opción de decidir si se puede invitar a alguien a ver una película o no."""
+    """Ejecuta la opción de decidir si se puede invitar a alguien a ver una película o no.
+
+    Parameters:
+    *peliculas (dict): Argumentos variables que representan diccionarios de películas.
+
+    Returns:
+    None. Imprime el resultado de la decisión sobre si se puede invitar a alguien a ver la película en la consola.
+    """
     print("Decidir si se puede invitar a alguien a ver una película")
 
     nombre_pelicula = input("Ingrese el nombre de la película: ")
@@ -83,8 +163,19 @@ def ejecutar_decidir_invitar(*peliculas: dict) -> None:
         else:
             print("No puede invitar a la persona a ver la película debido a restricciones.")
 
+
 def iniciar_aplicacion():
-    """Inicia la ejecución de la aplicación por consola."""
+    """Inicia la ejecución de la aplicación por consola.
+
+    La función crea cinco instancias de películas y ejecuta un bucle que muestra información detallada
+    sobre cada película y luego presenta un menú de aplicación para que el usuario realice operaciones en ellas.
+
+    Parameters:
+    None.
+
+    Returns:
+    None.
+    """
     pelicula1 = mod.crear_pelicula("Shrek", "Familiar, Comedia", 92, 2001, 'Todos', 1700, "Viernes")
     pelicula2 = mod.crear_pelicula("Get Out", "Suspenso, Terror", 104, 2017, '18+', 2330, "Sábado")  
     pelicula3 = mod.crear_pelicula("Icarus", "Documental, Suspenso", 122, 2017, '18+', 800, "Domingo")
@@ -119,8 +210,20 @@ def iniciar_aplicacion():
         if ejecutando:
             input("Presione cualquier tecla para continuar ... ")
 
+
 def mostrar_menu_aplicacion(p1: dict, p2: dict, p3: dict, p4: dict, p5: dict) -> bool:
-    """Muestra al usuario las opciones de ejecución disponibles."""
+    """Muestra al usuario las opciones de ejecución disponibles y ejecuta la opción elegida.
+
+    Parameters:
+    p1 (dict): Diccionario de la película 1.
+    p2 (dict): Diccionario de la película 2.
+    p3 (dict): Diccionario de la película 3.
+    p4 (dict): Diccionario de la película 4.
+    p5 (dict): Diccionario de la película 5.
+
+    Returns:
+    bool: Indica si la aplicación debe continuar ejecutándose (True) o si debe salir (False).
+    """
     print("Menu de opciones")
     print(" 1 - Consultar película más larga")
     print(" 2 - Consultar duración promedio de las películas")
@@ -149,7 +252,7 @@ def mostrar_menu_aplicacion(p1: dict, p2: dict, p3: dict, p4: dict, p5: dict) ->
     elif opcion_elegida == "7":
         continuar_ejecutando = False
     else:
-        print(f"La opción {opcion_elegida} no es una opción válida.")
+        print("La opcion " + opcion_elegida + " no es una opcion valida.")
     
     return continuar_ejecutando
 
