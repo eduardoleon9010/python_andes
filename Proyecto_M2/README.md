@@ -7,7 +7,7 @@ La interfaz de usuario se presenta en consola, proporcionando una experiencia de
 
 Este proyecto se enmarca como parte del curso de programación en Python de la Universidad de los Andes en colaboración con Coursera, teniendo un enfoque académico y de aprendizaje práctico para los desarrolladores.
 
-**Enlace al Artículo Completo (PDF):** [Enlace al PDF del Artículo](https://drive.google.com/file/d/1eIrubbFwBIkkpGueNPn6WXo8o80pRzbG/view?usp=sharing)
+**Lee el artículo completo (PDF):** [Enlace al PDF del Artículo](https://drive.google.com/file/d/1eIrubbFwBIkkpGueNPn6WXo8o80pRzbG/view?usp=sharing)
 
 ## Funcionalidades Principales
 La aplicación ofrece las siguientes funcionalidades:
