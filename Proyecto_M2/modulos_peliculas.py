@@ -1,6 +1,7 @@
 """
-Ejercicio nivel 2: Agenda de peliculas.
+Nivel 2: Proyecto agenda de peliculas.
 Módulo de cálculos.
+
 
 Temas:
 * Variables.
@@ -13,8 +14,8 @@ Temas:
 * Diccionarios.
 @author: Cupi2
 
-NOTA IMPORTANTE PARA TENER EN CUENTA EN TODAS LAS FUNCIONES DE ESTE MODULO:
-        Los diccionarios de pelicula tienen las siguientes parejas de clave-valor:
+IMPORTANTE: Considera lo siguiente en todas las funciones de este módulo:
+Las películas están representadas por diccionarios con las siguientes claves y valores:            
             - nombre (str): Nombre de la pelicula agendada.
             - genero (str): Generos de la pelicula separados por comas.
             - duracion (int): Duracion en minutos de la pelicula
