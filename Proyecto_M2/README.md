@@ -1,7 +1,10 @@
-# Proyecto agenda de películas
+# Proyecto agenda de películas - Carácter Académico
 
 ## Descripción General
 **Agenda de películas** es una aplicación de gestión de películas que permite a los usuarios organizar y agendar sus visualizaciones de películas en una aplicación de transmisión, como Netflix. La aplicación ofrece diversas funciones que facilitan la consulta de información sobre las películas, el cálculo de estadísticas y la realización de acciones específicas relacionadas con las películas en la lista.
+
+## Carácter Académico
+Este proyecto fue desarrollado como parte del curso de programación en Python de la Universidad de los Andes, disponible en Coursera. Se centra en la aplicación de conceptos de programación y desarrollo de software en un entorno práctico.
 
 ## Funcionalidades Principales
 La aplicación ofrece las siguientes funcionalidades:
@@ -30,12 +33,6 @@ La aplicación se ha desarrollado en Python y se espera que se ejecute en un ent
 
 ## Colaboración
 Si deseas colaborar en este proyecto, sigue los pasos en la sección de Colaboración en este documento.
-
-## Autor
-Este proyecto fue desarrollado por [Ing. Leon]. Puedes ponerte en contacto con el autor en [contactonexatech@gmail.com] para preguntas o comentarios relacionados con la aplicación.
-
-## Agradecimientos
-Agradecemos a todos los contribuyentes y usuarios que han participado en el desarrollo y uso de esta aplicación. Sus comentarios y sugerencias han sido fundamentales para mejorar esta herramienta.
 
 ## Licencia
 Este proyecto se encuentra bajo la Licencia MIT. Puedes utilizar, modificar y distribuir libremente este software de acuerdo con los términos de dicha licencia.
