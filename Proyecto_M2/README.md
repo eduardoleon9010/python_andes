@@ -2,17 +2,12 @@
 
 ## Descripción General
 **Agenda de películas** El proyecto consiste en el desarrollo de una aplicación de gestión de películas en Python. El propósito principal de la aplicación es proporcionar a los usuarios una herramienta eficaz para organizar y planificar sus sesiones cinematográficas. Con la creciente abundancia de plataformas de transmisión en línea y la diversidad de contenido audiovisual disponible, surge la necesidad de una herramienta que facilite la elección y planificación de las películas a ver.
-
 La aplicación, diseñada con un enfoque modular y utilizando la técnica Dividir y Conquistar para abordar la complejidad del proyecto, ofrece diversas funcionalidades clave. Los usuarios pueden consultar información detallada sobre las películas, calcular estadísticas relacionadas con la duración y clasificación, buscar estrenos según el año especificado, y realizar acciones como reprogramar películas o decidir si es posible invitar a alguien a ver una película bajo ciertas condiciones.
-
 La interfaz de usuario se presenta en consola, proporcionando una experiencia de interacción sencilla y eficiente. La aplicación busca no solo organizar la información sobre las películas, sino también considerar aspectos prácticos como la duración, la clasificación por edad y las preferencias de horario del usuario.
 
 Este proyecto se enmarca como parte del curso de programación en Python de la Universidad de los Andes en colaboración con Coursera, teniendo un enfoque académico y de aprendizaje práctico para los desarrolladores.
 
-**Enlace al Artículo Completo (PDF):** [[Insertar Enlace a Drive del PDF del Artículo](https://drive.google.com/file/d/1eIrubbFwBIkkpGueNPn6WXo8o80pRzbG/view?usp=sharing)](#)
-
-## Carácter Académico
-Este proyecto fue desarrollado como parte del curso de programación en Python de la Universidad de los Andes, disponible en Coursera. Se centra en la aplicación de conceptos de programación y desarrollo de software en un entorno práctico.
+**Enlace al Artículo Completo (PDF):** [Enlace al PDF del Artículo](https://drive.google.com/file/d/1eIrubbFwBIkkpGueNPn6WXo8o80pRzbG/view?usp=sharing)
 
 ## Funcionalidades Principales
 La aplicación ofrece las siguientes funcionalidades:
