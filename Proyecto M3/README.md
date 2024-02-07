@@ -1,7 +1,6 @@
 """
 Created on Sun Sep 10 07:16:47 2023
 
-@author: Ing. Leon
 """
 
 # Proyecto Billboard: Gestión de Canciones y Estadísticas
