@@ -8,6 +8,7 @@ Created on Wed Feb  7 11:13:37 2024
 import calculadora_indices as calc
 
 def calcular_IMC_interactivo():
+    """Calcula el Índice de Masa Corporal (IMC) interactivo."""
     print("Calculadora de Índice de Masa Corporal")
     peso = float(input("Ingrese su peso en kilogramos: "))
     altura = float(input("Ingrese su altura en metros: "))
@@ -15,6 +16,7 @@ def calcular_IMC_interactivo():
     print(f"Su índice de masa corporal es: {imc:.2f}")
 
 def calcular_porcentaje_grasa_interactivo():
+    """Calcula el Porcentaje de Grasa Corporal interactivo."""
     print("Calculadora de Porcentaje de Grasa Corporal")
     peso = float(input("Ingrese su peso en kilogramos: "))
     altura = float(input("Ingrese su altura en metros: "))
@@ -25,6 +27,7 @@ def calcular_porcentaje_grasa_interactivo():
     print(f"Su porcentaje de grasa corporal es: {porcentaje_grasa:.2f}%")
 
 def calcular_calorias_en_reposo_interactivo():
+    """Calcula las calorías en reposo interactivo."""
     print("Calculadora de Calorías en Reposo")
     peso = float(input("Ingrese su peso en kilogramos: "))
     altura = float(input("Ingrese su altura en metros: "))
@@ -35,6 +38,7 @@ def calcular_calorias_en_reposo_interactivo():
     print(f"Usted quema {calorias_reposo:.2f} calorías en reposo.")
 
 def calcular_calorias_en_actividad_interactivo():
+    """Calcula las calorías en actividad interactivo."""
     print("Calculadora de Calorías en Actividad")
     peso = float(input("Ingrese su peso en kilogramos: "))
     altura = float(input("Ingrese su altura en metros: "))
@@ -46,6 +50,7 @@ def calcular_calorias_en_actividad_interactivo():
     print(f"Usted quema {calorias_actividad:.2f} calorías realizando la actividad.")
 
 def consumo_calorias_recomendado_para_adelgazar_interactivo():
+    """Calcula el consumo calórico recomendado para adelgazar interactivo."""
     print("Calculadora de Consumo Calórico Recomendado para Adelgazar")
     peso = float(input("Ingrese su peso en kilogramos: "))
     altura = float(input("Ingrese su altura en metros: "))
@@ -56,6 +61,7 @@ def consumo_calorias_recomendado_para_adelgazar_interactivo():
     print(mensaje)
 
 def main():
+    """Función principal del programa."""
     print("Bienvenido a la Calculadora de Índices Corporales")
     while True:
         print("\nOpciones:")
