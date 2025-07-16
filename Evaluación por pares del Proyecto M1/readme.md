@@ -1,6 +1,6 @@
 # Calculadora de Índices Corporales
 
-Este proyecto es una calculadora de índices corporales escrita en Python. Proporciona funciones para calcular el Índice de Masa Corporal (IMC), el porcentaje de grasa corporal, la Tasa Metabólica Basal (TMB) y recomendaciones de consumo calórico para adelgazar. Además, incluye una interfaz de usuario basada en consola para facilitar su uso.
+Este proyecto es una calculadora de índices corporales escrita en Python. Proporciona funciones para calcular el Índice de Masa Corporal (IMC), el porcentaje de grasa corporal, la Tasa Metabólica Basal (TMB) y recomendaciones de consumo calórico para adelgazar. Incluye una interfaz de usuario basada en consola para facilitar su uso.
 
 ## Tabla de Contenidos
 1. [Requisitos](#requisitos)
@@ -20,7 +20,7 @@ Antes de utilizar este proyecto, asegúrate de tener instalado Python 3.7 o supe
 4. Sigue las instrucciones en pantalla e ingresa los datos solicitados, como peso, altura, edad y género.
 5. La calculadora mostrará el resultado en la consola, incluyendo el IMC, el porcentaje de grasa corporal, la TMB, las calorías quemadas en reposo y las recomendaciones de consumo calórico para adelgazar.
 
-## Estructura del Proyecto
+## Estructura del proyecto
 La estructura del proyecto es la siguiente:
 Evaluación por pares del Proyecto M1/
 ├── consola_calculadora.py
@@ -42,6 +42,6 @@ Evaluación por pares del Proyecto M1/
 Este proyecto se distribuye bajo la [Licencia MIT](LICENSE).
 
 ## Créditos
-Este proyecto fue desarrollado por [Ing. Leon]. Siéntete libre de contribuir y mejorar este proyecto. Para obtener más detalles sobre la implementación y funcionamiento del proyecto, consulta la [documentación detallada](https://drive.google.com/file/d/1C0iGBhFXiksemZ9Om2pFlgvIv8oxFG7g/view?usp=sharing).
+Este proyecto fue desarrollado por [Ing. Leon]. Siéntase libre de contribuir y mejorar este proyecto. Para obtener más detalles sobre la implementación y funcionamiento del proyecto, consulta la [documentación detallada](https://drive.google.com/file/d/1C0iGBhFXiksemZ9Om2pFlgvIv8oxFG7g/view?usp=sharing).
 
 
