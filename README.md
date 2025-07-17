@@ -31,5 +31,7 @@ Gracias al autor del repositorio original por abrir este espacio de colaboració
 A través de este tipo de iniciativas, el aprendizaje se convierte en una experiencia más rica, abierta y significativa.
 
 
-**Universidad de los Andes – Coursera**  
-**Repositorio colaborativo con fines pedagógicos y de formación técnica.**
+<p align="center" style="font-size: 14px;">
+  <strong>Universidad de los Andes – Coursera</strong><br>
+  Repositorio colaborativo con fines pedagógicos y de formación técnica.
+</p>
