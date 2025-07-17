@@ -1,7 +1,16 @@
-# 🐍 Proyecto de prácticas – Curso de Programación con Python (Uniandes + Coursera)
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Logo Python" width="120">
+</p>
 
-¡Hola y bienvenid@!  
-Este repositorio forma parte del proceso de formación en el curso **"Programación con Python"**, ofrecido por la **Universidad de los Andes** a través de **Coursera**.
+<h1 align="center">🐍 Proyecto de Prácticas – Programación con Python</h1>
+
+<p align="center">
+  <strong>Universidad de los Andes + Coursera</strong>
+</p>
+
+<p align="center">
+  <em>Repositorio colaborativo de prácticas, aprendizaje y mejora continua.</em>
+</p>
 
 Ha sido generosamente compartido por otro estudiante del curso, permitiéndome colaborar, practicar y reflexionar sobre los contenidos mediante la experiencia del desarrollo colaborativo.
 
