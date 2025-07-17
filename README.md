@@ -2,7 +2,7 @@
   <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Logo Python" width="120">
 </p>
 
-<h1 align="center">🐍 Proyecto de Prácticas – Programación con Python</h1>
+<h1 align="center"> Proyecto de Prácticas – Programación con Python</h1>
 
 <p align="center">
   <strong>Universidad de los Andes + Coursera</strong>
