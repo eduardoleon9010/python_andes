@@ -21,9 +21,9 @@ Este espacio representa una oportunidad valiosa para **aprender en conjunto**, i
 Colaborar en este repositorio no solo me permite afianzar los conceptos fundamentales de Python, sino también comprender cómo se estructuran soluciones, cómo se documenta el código y cómo se gestionan buenas prácticas en entornos colaborativos.
 
  **¿Qué contiene este repositorio?**
-- Funciones resueltas que abordan problemas planteados a lo largo del curso.
-- Ejercicios para reforzar estructuras básicas como condicionales, ciclos, listas y funciones.
-- Aportes adicionales con fines de documentación, mejora o análisis crítico del aprendizaje.
+  -> Funciones resueltas que abordan problemas planteados a lo largo del curso.
+  -> Ejercicios para reforzar estructuras básicas como condicionales, ciclos, listas y funciones.
+  -> Aportes adicionales con fines de documentación, mejora o análisis crítico del aprendizaje.
 
 **Agradecimientos**
 
